@@ -1,5 +1,5 @@
 // SceneDelegate.swift
-// Copyright © VTB. All rights reserved.
+// Copyright © Roadmap. All rights reserved.
 
 import UIKit
 
