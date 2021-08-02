@@ -1,12 +1,7 @@
-//
-//  AppDelegate.swift
-//  VKClone
-//
-//  Created by Vlad on 02.08.2021.
-//
+// AppDelegate.swift
+// Copyright © VTB. All rights reserved.
 
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate { }
-
+class AppDelegate: UIResponder, UIApplicationDelegate {}

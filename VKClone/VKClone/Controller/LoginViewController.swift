@@ -1,16 +1,10 @@
-//
-//  ViewController.swift
-//  VKClone
-//
-//  Created by Vlad on 02.08.2021.
-//
+// LoginViewController.swift
+// Copyright © VTB. All rights reserved.
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
-
