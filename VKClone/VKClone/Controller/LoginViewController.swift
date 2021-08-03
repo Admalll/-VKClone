@@ -29,7 +29,22 @@ final class LoginViewController: UIViewController {
         removeNotifications()
     }
 
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        super.shouldPerformSegue(withIdentifier: identifier, sender: sender)
+        return checkLoginInfo()
+    }
+
     // MARK: - Private methods
+
+    private func checkLoginInfo() -> Bool {
+        guard let login = loginTextField.text, let password = passwordTextField.text else { return false }
+        if login == "admin", password == "123456" {
+            return true
+        } else {
+            showErrorAlert(alertText: "Ошибка", alertMessage: "Пользователь не найден")
+            return false
+        }
+    }
 
     private func addNotifications() {
         NotificationCenter.default.addObserver(
