@@ -6,9 +6,9 @@ import UIKit
 final class LoginViewController: UIViewController {
     // MARK: - IBOutlets
 
-    @IBOutlet var loginTextField: UITextField!
-    @IBOutlet var passwordTextField: UITextField!
-    @IBOutlet var mainScrollView: UIScrollView!
+    @IBOutlet private var loginTextField: UITextField!
+    @IBOutlet private var passwordTextField: UITextField!
+    @IBOutlet private var mainScrollView: UIScrollView!
 
     // MARK: - UIViewController
 
@@ -21,6 +21,17 @@ final class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        addNotifications()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        removeNotifications()
+    }
+
+    // MARK: - Private methods
+
+    private func addNotifications() {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardWillShow),
@@ -36,8 +47,7 @@ final class LoginViewController: UIViewController {
         )
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    private func removeNotifications() {
         NotificationCenter.default.removeObserver(
             self,
             name:
@@ -51,8 +61,6 @@ final class LoginViewController: UIViewController {
             object: nil
         )
     }
-
-    // MARK: - Private methods
 
     private func setupView() {
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
