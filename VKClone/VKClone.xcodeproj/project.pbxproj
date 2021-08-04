@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F597C81726B9741800331CDF /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F597C81626B9741800331CDF /* UIViewController+Alert.swift */; };
 		F5EA5C2B26B85CBE001A7535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA5C2A26B85CBE001A7535 /* AppDelegate.swift */; };
 		F5EA5C2D26B85CBE001A7535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA5C2C26B85CBE001A7535 /* SceneDelegate.swift */; };
 		F5EA5C2F26B85CBE001A7535 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA5C2E26B85CBE001A7535 /* LoginViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F597C81626B9741800331CDF /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		F5EA5C2726B85CBE001A7535 /* VKClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EA5C2A26B85CBE001A7535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5EA5C2C26B85CBE001A7535 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F597C81826B9741C00331CDF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F597C81626B9741800331CDF /* UIViewController+Alert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F5EA5C1E26B85CBE001A7535 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 				F5EA5C3E26B85CD8001A7535 /* Application */,
 				F5EA5C3F26B85D04001A7535 /* Controller */,
 				F5EA5C4026B85D0B001A7535 /* View */,
+				F597C81826B9741C00331CDF /* Helpers */,
 			);
 			path = VKClone;
 			sourceTree = "<group>";
@@ -205,6 +216,7 @@
 				F5EA5C2F26B85CBE001A7535 /* LoginViewController.swift in Sources */,
 				F5EA5C2B26B85CBE001A7535 /* AppDelegate.swift in Sources */,
 				F5EA5C2D26B85CBE001A7535 /* SceneDelegate.swift in Sources */,
+				F597C81726B9741800331CDF /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
