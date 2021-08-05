@@ -6,7 +6,7 @@ import UIKit
 final class FriendsTableViewCell: UITableViewCell {
     // MARK: - IBOutlets
 
-    @IBOutlet private var avatarImageView: UIImageView!
+    @IBOutlet private var avatarView: AvatarView!
     @IBOutlet private var nicknameLabel: UILabel!
 
     // MARK: - UITableViewCell
@@ -22,7 +22,7 @@ final class FriendsTableViewCell: UITableViewCell {
     // MARK: - Public methods
 
     func setupCell(avatarImageName: String, nickname: String) {
-        avatarImageView.image = UIImage(named: avatarImageName)
+        avatarView.setupAvatarImage(imageName: avatarImageName)
         nicknameLabel.text = nickname
     }
 }

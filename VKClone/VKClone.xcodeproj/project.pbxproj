@@ -24,6 +24,8 @@
 		F5EA5C3226B85CBE001A7535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EA5C3026B85CBE001A7535 /* Main.storyboard */; };
 		F5EA5C3426B85CC0001A7535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EA5C3326B85CC0001A7535 /* Assets.xcassets */; };
 		F5EA5C3726B85CC0001A7535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EA5C3526B85CC0001A7535 /* LaunchScreen.storyboard */; };
+		F5EDE66026BC0AAD00695CE3 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE65F26BC0AAD00695CE3 /* AvatarView.swift */; };
+		F5EDE66226BC1FD800695CE3 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE66126BC1FD800695CE3 /* LikeControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		F5EA5C3326B85CC0001A7535 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5EA5C3626B85CC0001A7535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5EA5C3826B85CC0001A7535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EDE65F26BC0AAD00695CE3 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		F5EDE66126BC1FD800695CE3 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			children = (
 				F51E9AB826BAB23900B1E389 /* Cells */,
 				F5EA5C3026B85CBE001A7535 /* Main.storyboard */,
+				F5EDE65F26BC0AAD00695CE3 /* AvatarView.swift */,
+				F5EDE66126BC1FD800695CE3 /* LikeControl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 			files = (
 				F5EA5C2F26B85CBE001A7535 /* LoginViewController.swift in Sources */,
 				F5EA5C2B26B85CBE001A7535 /* AppDelegate.swift in Sources */,
+				F5EDE66226BC1FD800695CE3 /* LikeControl.swift in Sources */,
 				F51E9AC626BABD1600B1E389 /* UserGroupsTableViewController.swift in Sources */,
 				F5EA5C2D26B85CBE001A7535 /* SceneDelegate.swift in Sources */,
 				F51E9AC826BABD2900B1E389 /* AllGroupsTableViewController.swift in Sources */,
@@ -280,6 +287,7 @@
 				F51E9ABE26BAB2B600B1E389 /* FriendsPhotosCollectionViewController.swift in Sources */,
 				F51E9ACC26BABD4100B1E389 /* AllGroupsTableViewCell.swift in Sources */,
 				F597C81726B9741800331CDF /* UIViewController+Alert.swift in Sources */,
+				F5EDE66026BC0AAD00695CE3 /* AvatarView.swift in Sources */,
 				F51E9ABA26BAB24E00B1E389 /* FriendsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
