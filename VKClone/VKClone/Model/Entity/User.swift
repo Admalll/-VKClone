@@ -2,6 +2,8 @@
 // Copyright © Roadmap. All rights reserved.
 
 import Foundation
+
+///Структура пользователя
 struct User {
     let userName: String
     let userAvatarImageName: String
