@@ -6,7 +6,7 @@ import UIKit
 final class UserGroupTableViewCell: UITableViewCell {
     // MARK: - IBOutlets
 
-    @IBOutlet var groupImageView: UIImageView!
+    @IBOutlet var groupView: AvatarView!
     @IBOutlet private var groupNameLabel: UILabel!
 
     // MARK: - UITableViewCell
@@ -23,6 +23,6 @@ final class UserGroupTableViewCell: UITableViewCell {
 
     func setupCell(name: String, imageName: String) {
         groupNameLabel.text = name
-        groupImageView.image = UIImage(named: imageName)
+        groupView.setupAvatarImage(imageName: imageName)
     }
 }
