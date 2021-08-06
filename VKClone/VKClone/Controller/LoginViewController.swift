@@ -100,6 +100,10 @@ final class LoginViewController: UIViewController {
         mainScrollView.endEditing(true)
     }
 
+    @objc private func scrollValueChanged(sender: TableScrollCotrol) {
+        print(sender.selectedIndex ?? "nil")
+    }
+
     // MARK: - IBActions
 
     @IBAction private func loginButtonTapped(_ sender: UIButton) {

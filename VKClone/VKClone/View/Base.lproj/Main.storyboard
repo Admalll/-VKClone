@@ -105,66 +105,92 @@
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
         <!--Друзья-->
-        <scene sceneID="KM7-K4-76q">
+        <scene sceneID="vLT-Rx-WSE">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="R0H-D9-Jz0" customClass="FriendsTableViewController" customModule="VKClone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ETc-Hn-eIO">
+                <viewController id="ieM-Ru-Zjx" customClass="FriendsViewController" customModule="VKClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z3L-1Z-n91">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsTableViewCell" id="HFR-zC-F7W" customClass="FriendsTableViewCell" customModule="VKClone" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HFR-zC-F7W" id="rnX-vL-LQN">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2g-pf-YTy">
-                                            <rect key="frame" x="57" y="11" width="337" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQa-Hw-sxU" customClass="AvatarView" customModule="VKClone" customModuleProvider="target">
-                                            <rect key="frame" x="9" y="2" width="40" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowSize">
-                                                    <size key="value" width="1" height="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                    <real key="value" value="2"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                    </subviews>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cgx-wa-Exs">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsTableViewCell" id="LsT-ab-ShS" customClass="FriendsTableViewCell" customModule="VKClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LsT-ab-ShS" id="ApI-Mc-TnS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWc-nh-mi0">
+                                                    <rect key="frame" x="56" y="11" width="358" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lig-Dj-8X4" customClass="AvatarView" customModule="VKClone" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="2" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowSize">
+                                                            <size key="value" width="1" height="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarView" destination="lig-Dj-8X4" id="nZ3-y5-9gp"/>
+                                            <outlet property="nicknameLabel" destination="RWc-nh-mi0" id="ovR-OD-3Vw"/>
+                                            <segue destination="xGI-EU-wym" kind="show" identifier="showPhotos" id="MFs-Wj-0eF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="avatarView" destination="QQa-Hw-sxU" id="N94-Q0-pnK"/>
-                                    <outlet property="nicknameLabel" destination="c2g-pf-YTy" id="ukR-xr-I4Q"/>
-                                    <segue destination="xGI-EU-wym" kind="show" identifier="showPhotos" id="0X9-Qb-7eh"/>
+                                    <outlet property="dataSource" destination="ieM-Ru-Zjx" id="FAr-a7-sfh"/>
+                                    <outlet property="delegate" destination="ieM-Ru-Zjx" id="G5X-Ys-rB8"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="R0H-D9-Jz0" id="dg6-qR-Zfo"/>
-                            <outlet property="delegate" destination="R0H-D9-Jz0" id="qHs-D7-iGN"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Друзья" id="vpF-EI-BKP"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xah-ZQ-FJ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTU-74-GnM" customClass="TableScrollCotrol" customModule="VKClone" customModuleProvider="target">
+                                <rect key="frame" x="354" y="56" width="50" height="703"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BKf-OA-H0f"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xhm-RB-YFz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xhm-RB-YFz" firstAttribute="trailing" secondItem="cgx-wa-Exs" secondAttribute="trailing" id="JaU-Ww-GyH"/>
+                            <constraint firstItem="xhm-RB-YFz" firstAttribute="bottom" secondItem="cgx-wa-Exs" secondAttribute="bottom" id="O6z-oy-blL"/>
+                            <constraint firstItem="xhm-RB-YFz" firstAttribute="trailing" secondItem="zTU-74-GnM" secondAttribute="trailing" constant="10" id="Qj3-xH-Tae"/>
+                            <constraint firstItem="cgx-wa-Exs" firstAttribute="top" secondItem="xhm-RB-YFz" secondAttribute="top" id="YeN-yc-Y1j"/>
+                            <constraint firstItem="zTU-74-GnM" firstAttribute="top" secondItem="xhm-RB-YFz" secondAttribute="top" id="haO-4W-lKI"/>
+                            <constraint firstItem="cgx-wa-Exs" firstAttribute="leading" secondItem="xhm-RB-YFz" secondAttribute="leading" id="jUG-2p-0Lg"/>
+                            <constraint firstItem="xhm-RB-YFz" firstAttribute="bottom" secondItem="zTU-74-GnM" secondAttribute="bottom" id="luv-ov-vHo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Друзья" id="R64-hj-pUq"/>
+                    <connections>
+                        <outlet property="tableScrollControl" destination="zTU-74-GnM" id="eyp-X1-szv"/>
+                        <outlet property="tableView" destination="cgx-wa-Exs" id="AVU-Sn-PvK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKD-so-ICv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2924.6376811594205" y="-283.25892857142856"/>
+            <point key="canvasLocation" x="2924.6376811594205" y="-943.52678571428567"/>
         </scene>
         <!--Friends Photos Collection View Controller-->
         <scene sceneID="k8p-2H-Jfc">
@@ -240,7 +266,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="R0H-D9-Jz0" kind="relationship" relationship="rootViewController" id="lKZ-Ri-TcK"/>
+                        <segue destination="ieM-Ru-Zjx" kind="relationship" relationship="rootViewController" id="17r-8r-CUW"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUt-vs-kuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
