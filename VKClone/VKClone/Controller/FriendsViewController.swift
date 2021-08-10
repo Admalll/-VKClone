@@ -176,6 +176,8 @@ extension FriendsViewController: UITableViewDataSource {
     }
 }
 
+// MARK: - UISearchResultsUpdating
+
 extension FriendsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filteredFriends.removeAll(keepingCapacity: false)
