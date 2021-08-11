@@ -3,7 +3,7 @@
 
 import UIKit
 
-final class NewsViewController: UIViewController { }
+final class NewsViewController: UIViewController {}
 
 // MARK: - UITableViewDataSource
 

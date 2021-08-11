@@ -9,6 +9,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet private var loginTextField: UITextField!
     @IBOutlet private var passwordTextField: UITextField!
     @IBOutlet private var mainScrollView: UIScrollView!
+    @IBOutlet private var progressView: UIView!
 
     // MARK: - UIViewController
 
@@ -16,6 +17,7 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         setupView()
+        showAnimatingDotsView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -35,6 +37,32 @@ final class LoginViewController: UIViewController {
     }
 
     // MARK: - Private methods
+
+    private func showAnimatingDotsView() {
+        UIView.animate(withDuration: 0.1, delay: 4, animations: {
+            self.progressView.alpha = 0.0
+        })
+
+        let lay = CAReplicatorLayer()
+        lay.frame = CGRect(x: (view.bounds.width - 100) / 2, y: (view.bounds.height - 100) / 2, width: 200, height: 100)
+        let circle = CALayer()
+        circle.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        circle.cornerRadius = circle.frame.width / 2
+        circle.backgroundColor = UIColor.lightGray.cgColor
+        lay.addSublayer(circle)
+        lay.instanceCount = 3
+        lay.instanceTransform = CATransform3DMakeTranslation(45, 0, 0)
+        let anim = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
+        anim.fromValue = 1.0
+        anim.toValue = 0.2
+        anim.duration = 1
+        anim.repeatCount = 3
+
+        circle.add(anim, forKey: nil)
+        lay.instanceDelay = anim.duration / Double(lay.instanceCount)
+
+        progressView.layer.addSublayer(lay)
+    }
 
     private func checkLoginInfo() -> Bool {
         guard let login = loginTextField.text, let password = passwordTextField.text else { return false }

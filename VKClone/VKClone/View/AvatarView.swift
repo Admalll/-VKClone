@@ -74,6 +74,7 @@ import UIKit
     private func setupSubviews() {
         addSubview(shadowView)
         addSubview(avaratarImageView)
+        setupAnimation()
     }
 
     private func updateShadows() {
@@ -88,5 +89,33 @@ import UIKit
         shadowView.layer.cornerRadius = bounds.width / 2
         avaratarImageView.frame = bounds
         avaratarImageView.layer.cornerRadius = bounds.width / 2
+    }
+
+    private func setupAnimation() {
+        avaratarImageView.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(avatarTapped(sender:)))
+        avaratarImageView.addGestureRecognizer(tapGesture)
+    }
+
+    @objc private func avatarTapped(sender: UIImageView) {
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            usingSpringWithDamping: 1,
+            initialSpringVelocity: 1,
+            options: []
+        ) {
+            self.avaratarImageView.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
+        } completion: { _ in
+            UIView.animate(
+                withDuration: 1,
+                delay: 0,
+                usingSpringWithDamping: 1,
+                initialSpringVelocity: 1,
+                options: []
+            ) {
+                self.avaratarImageView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }
+        }
     }
 }

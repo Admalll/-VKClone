@@ -29,7 +29,15 @@ final class LikeControl: UIControl {
 
     private var likesCount = 0 {
         didSet {
-            likesCountLabel.text = String(likesCount)
+            UIView.transition(
+                with: likesCountLabel,
+                duration: 0.5,
+                options: .transitionFlipFromLeft,
+                animations: {
+                    self.likesCountLabel.text = String(self.likesCount)
+                },
+                completion: nil
+            )
         }
     }
 

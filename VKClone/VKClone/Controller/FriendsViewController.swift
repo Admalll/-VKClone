@@ -97,7 +97,7 @@ final class FriendsViewController: UIViewController {
         )
     ]
 
-    private var friends: [UserWithLetter] {
+    private var sortedFriends: [UserWithLetter] {
         unsortedFriends.sorted { $0.letter < $1.letter }
     }
 
@@ -113,14 +113,14 @@ final class FriendsViewController: UIViewController {
         guard segue.identifier == "showPhotos" else { return }
         guard let vc = segue.destination as? FriendsPhotosCollectionViewController else { return }
         guard let index = tableView.indexPathForSelectedRow else { return }
-        vc.setupCells(imageNames: friends[index.section].users[index.row].userPhotosNames)
-        vc.title = friends[index.section].users[index.row].userName
+        vc.setupCells(imageNames: sortedFriends[index.section].users[index.row].userPhotosNames)
+        vc.title = sortedFriends[index.section].users[index.row].userName
     }
 
     // MARK: - Private methods
 
     private func setupView() {
-        setupScroll()
+        setupTableScrollControl()
         setupSearchController()
     }
 
@@ -131,9 +131,9 @@ final class FriendsViewController: UIViewController {
         tableView.reloadData()
     }
 
-    private func setupScroll() {
+    private func setupTableScrollControl() {
         var letters: [Character] = []
-        friends.forEach { letters.append($0.letter) }
+        sortedFriends.forEach { letters.append($0.letter) }
         tableScrollControl.setupLetters(letters: letters)
 
         tableScrollControl.addTarget(self, action: #selector(selectedLetterChanged), for: .valueChanged)
@@ -150,15 +150,15 @@ final class FriendsViewController: UIViewController {
 
 extension FriendsViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        resultSearchController.isActive ? filteredFriends.count : friends.count
+        resultSearchController.isActive ? filteredFriends.count : sortedFriends.count
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        resultSearchController.isActive ? filteredFriends[section].users.count : friends[section].users.count
+        resultSearchController.isActive ? filteredFriends[section].users.count : sortedFriends[section].users.count
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        String(friends[section].letter)
+        String(sortedFriends[section].letter)
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -169,7 +169,7 @@ extension FriendsViewController: UITableViewDataSource {
             cell.setupCell(avatarImageName: friend.userAvatarImageName, nickname: friend.userName)
             return cell
         } else {
-            let friend = friends[indexPath.section].users[indexPath.row]
+            let friend = sortedFriends[indexPath.section].users[indexPath.row]
             cell.setupCell(avatarImageName: friend.userAvatarImageName, nickname: friend.userName)
             return cell
         }
@@ -182,7 +182,7 @@ extension FriendsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filteredFriends.removeAll(keepingCapacity: false)
         guard let text = searchController.searchBar.text else { return }
-        let array = friends.filter { String($0.letter) == text }
+        let array = sortedFriends.filter { String($0.letter) == text }
         filteredFriends = array
         tableView.reloadData()
     }
