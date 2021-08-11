@@ -17,7 +17,7 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         setupView()
-        showAnimatingDots()
+        showAnimatingDotsView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -38,7 +38,7 @@ final class LoginViewController: UIViewController {
 
     // MARK: - Private methods
 
-    private func showAnimatingDots() {
+    private func showAnimatingDotsView() {
         UIView.animate(withDuration: 0.1, delay: 4, animations: {
             self.progressView.alpha = 0.0
         })

@@ -4,6 +4,10 @@
 import UIKit
 
 final class FriendsPhotosCollectionViewController: UICollectionViewController {
+    enum Const {
+        static let reuseIdentifier = "FriendsPhotoCollectionViewCell"
+    }
+
     // MARK: - Private properties
 
     private var userPhotosNames: [String] = []
@@ -25,7 +29,7 @@ final class FriendsPhotosCollectionViewController: UICollectionViewController {
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: "FriendsPhotoCollectionViewCell",
+            withReuseIdentifier: Const.reuseIdentifier,
             for: indexPath
         ) as? FriendsPhotoCollectionViewCell else { return UICollectionViewCell() }
         cell.setupCell(imageName: userPhotosNames[indexPath.row])

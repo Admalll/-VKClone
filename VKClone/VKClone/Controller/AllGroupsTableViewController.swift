@@ -4,6 +4,10 @@
 import UIKit
 
 final class AllGroupsTableViewController: UITableViewController {
+    enum Const {
+        static let reuseIdentifier = "AllGroupsTableViewCell"
+    }
+
     // MARK: - Priva properties
 
     private var groups: [Group] = [
@@ -19,7 +23,7 @@ final class AllGroupsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView
-            .dequeueReusableCell(withIdentifier: "AllGroupsTableViewCell") as? AllGroupsTableViewCell
+            .dequeueReusableCell(withIdentifier: Const.reuseIdentifier) as? AllGroupsTableViewCell
         else { return UITableViewCell() }
         let group = groups[indexPath.row]
         cell.setupCell(groupName: group.groupName, groupImageName: group.groupImageName)
