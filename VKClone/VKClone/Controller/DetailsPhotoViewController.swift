@@ -6,7 +6,7 @@ import UIKit
 final class DetailsPhotoViewController: UIViewController {
     // MARK: - IBOUtlet
 
-    @IBOutlet var photoImageView: UIImageView!
+    @IBOutlet private var photoImageView: UIImageView!
 
     // MARK: - Private properties
 
@@ -26,27 +26,16 @@ final class DetailsPhotoViewController: UIViewController {
     }
 
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizer.Direction.left:
-                if index == photos.count - 1 {
-                    index = 0
-                } else {
-                    index += 1
-                }
-                swipeLeft()
-
-            case UISwipeGestureRecognizer.Direction.right:
-                if index == 0 {
-                    index = photos.count - 1
-                } else {
-                    index -= 1
-                }
-                swipeRight()
-
-            default:
-                break
-            }
+        guard let swipeGesture = gesture as? UISwipeGestureRecognizer else { return }
+        switch swipeGesture.direction {
+        case .left:
+            index == (photos.count - 1) ? (index = 0) : (index += 1)
+            swipeLeft()
+        case .right:
+            index == 0 ? (index = photos.count - 1) : (index -= 1)
+            swipeRight:
+        default:
+            break
         }
     }
 
