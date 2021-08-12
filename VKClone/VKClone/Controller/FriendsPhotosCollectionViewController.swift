@@ -33,9 +33,6 @@ final class FriendsPhotosCollectionViewController: UICollectionViewController {
             for: indexPath
         ) as? FriendsPhotoCollectionViewCell else { return UICollectionViewCell() }
         cell.setupCell(imageName: userPhotosNames[indexPath.row])
-
-        // Configure the cell
-
         return cell
     }
 

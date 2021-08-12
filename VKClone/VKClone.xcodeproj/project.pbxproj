@@ -28,6 +28,7 @@
 		F5EDE66226BC1FD800695CE3 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE66126BC1FD800695CE3 /* LikeControl.swift */; };
 		F5EDE66426BD4A6500695CE3 /* TableScrollCotrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE66326BD4A6500695CE3 /* TableScrollCotrol.swift */; };
 		F5EDE69F26C1B8E600695CE3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE69E26C1B8E600695CE3 /* NewsViewController.swift */; };
+		F5EDE6A126C4ECDA00695CE3 /* DetailsPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE6A026C4ECDA00695CE3 /* DetailsPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F5EDE66126BC1FD800695CE3 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 		F5EDE66326BD4A6500695CE3 /* TableScrollCotrol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableScrollCotrol.swift; sourceTree = "<group>"; };
 		F5EDE69E26C1B8E600695CE3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F5EDE6A026C4ECDA00695CE3 /* DetailsPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				F51E9ABD26BAB2B600B1E389 /* FriendsPhotosCollectionViewController.swift */,
 				F51E9AC526BABD1600B1E389 /* UserGroupsTableViewController.swift */,
 				F5EDE69E26C1B8E600695CE3 /* NewsViewController.swift */,
+				F5EDE6A026C4ECDA00695CE3 /* DetailsPhotoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				F5EDE69F26C1B8E600695CE3 /* NewsViewController.swift in Sources */,
 				F5EDE66026BC0AAD00695CE3 /* AvatarView.swift in Sources */,
 				F51E9ABA26BAB24E00B1E389 /* FriendsViewController.swift in Sources */,
+				F5EDE6A126C4ECDA00695CE3 /* DetailsPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
