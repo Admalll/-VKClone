@@ -33,7 +33,7 @@ final class DetailsPhotoViewController: UIViewController {
             swipeLeft()
         case .right:
             index == 0 ? (index = photos.count - 1) : (index -= 1)
-            swipeRight:
+            swipeRight()
         default:
             break
         }
