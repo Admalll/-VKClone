@@ -470,7 +470,7 @@
         <!--Друзья-->
         <scene sceneID="2qp-TF-0Jg">
             <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="za0-Ao-Pwf" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="za0-Ao-Pwf" customClass="VKNavigationController" customModule="VKClone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Друзья" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="osv-SX-JOk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ip3-3T-7dk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -617,7 +617,7 @@
         <!--Группы-->
         <scene sceneID="vAI-aT-S3J">
             <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="wbl-uX-soW" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="wbl-uX-soW" customClass="VKNavigationController" customModule="VKClone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Группы" image="person.3" catalog="system" selectedImage="person.3.fill" id="KBI-Tj-357"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M5b-k8-BCX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -656,7 +656,7 @@
         <!--Новости-->
         <scene sceneID="5J4-3i-1rF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lQt-wP-dv4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lQt-wP-dv4" customClass="VKNavigationController" customModule="VKClone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Новости" image="newspaper" catalog="system" selectedImage="newspaper.fill" id="c2a-fE-yDA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="N69-ZI-1Vc">
