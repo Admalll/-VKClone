@@ -33,6 +33,7 @@
 		F5EDE6AD26C5A8EB00695CE3 /* VKPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE6AC26C5A8EB00695CE3 /* VKPopAnimator.swift */; };
 		F5EDE6AF26C5A8FE00695CE3 /* VKPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE6AE26C5A8FE00695CE3 /* VKPushAnimator.swift */; };
 		F5EDE6B126C5A92E00695CE3 /* VKPercentDrivenInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE6B026C5A92E00695CE3 /* VKPercentDrivenInteractiveTransition.swift */; };
+		F5EDE6B326D4214A00695CE3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDE6B226D4214A00695CE3 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		F5EDE6AC26C5A8EB00695CE3 /* VKPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKPopAnimator.swift; sourceTree = "<group>"; };
 		F5EDE6AE26C5A8FE00695CE3 /* VKPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKPushAnimator.swift; sourceTree = "<group>"; };
 		F5EDE6B026C5A92E00695CE3 /* VKPercentDrivenInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKPercentDrivenInteractiveTransition.swift; sourceTree = "<group>"; };
+		F5EDE6B226D4214A00695CE3 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				F5EA5C3F26B85D04001A7535 /* Controller */,
 				F5EA5C4026B85D0B001A7535 /* View */,
 				F597C81826B9741C00331CDF /* Helpers */,
+				F5EDE6B226D4214A00695CE3 /* Session.swift */,
 			);
 			path = VKClone;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				F597C81726B9741800331CDF /* UIViewController+Alert.swift in Sources */,
 				F5EDE6AD26C5A8EB00695CE3 /* VKPopAnimator.swift in Sources */,
 				F5EDE69F26C1B8E600695CE3 /* NewsViewController.swift in Sources */,
+				F5EDE6B326D4214A00695CE3 /* Session.swift in Sources */,
 				F5EDE66026BC0AAD00695CE3 /* AvatarView.swift in Sources */,
 				F51E9ABA26BAB24E00B1E389 /* FriendsViewController.swift in Sources */,
 				F5EDE6A126C4ECDA00695CE3 /* DetailsPhotoViewController.swift in Sources */,
